@@ -1,6 +1,7 @@
 # Rime 運行時產物，不納入版本管理
 build/
+sync/
 *.userdb/
 installation.yaml
 user.yaml
-sync/
+.DS_Store

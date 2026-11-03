@@ -1,14 +1,3 @@
-# 小鶴雙拼方案自訂：覆蓋 double_pinyin_flypy.schema.yaml
+# 小鶴雙拼方案自訂：覆蓋 rime-ice 的 double_pinyin_flypy.schema.yaml
 patch:
-  switches:
-    - name: ascii_mode
-      reset: 0
-      states: [ 中文, 西文 ]
-    - name: full_shape
-      states: [ 半角, 全角 ]
-    - name: simplification
-      reset: 1                      # 1 = 啟動時預設開啟簡化字輸出
-      states: [ 漢字, 汉字 ]
-    - name: ascii_punct
-      states: [ 。，, ．， ]
-  translator/preedit_format: []     # 預編輯區保持雙拼原始按鍵，不展開成全拼（如 ul 不再顯示為 shuang）
+  translator/preedit_format: []   # 預編輯區保持雙拼原始按鍵，不展開成全拼（如 ul 不顯示為 shuang）

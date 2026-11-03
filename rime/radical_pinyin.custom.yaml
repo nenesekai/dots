@@ -1,0 +1,4 @@
+# 部件拆字反查改用小鶴雙拼鍵位（對應 rime-ice config 配方 schema=double_pinyin_flypy）
+patch:
+  speller/algebra:
+    __include: radical_pinyin.schema.yaml:/algebra_double_pinyin_flypy
