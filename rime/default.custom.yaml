@@ -1,0 +1,15 @@
+# 全域自訂：覆蓋 default.yaml
+patch:
+  schema_list:
+    - schema: double_pinyin_flypy   # 小鶴雙拼，排第一 = 預設方案
+    - schema: luna_pinyin           # 保留朙月拼音（全拼）備用
+  menu/page_size: 7
+  # 取消 Caps Lock / Shift / Control 切換中英文；Caps Lock 恢復為系統原生大寫鎖定
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Caps_Lock: noop
+    Shift_L: noop
+    Shift_R: noop
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: noop
