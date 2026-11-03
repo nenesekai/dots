@@ -1,0 +1,63 @@
+# 鼠鬚管外觀自訂：覆蓋 rime-ice 的 squirrel.yaml
+# 配色來源：https://github.com/catppuccin/squirrel（顏色格式為 0xBBGGRR）
+# 佈局、字體等沿用 rime-ice 的設定，這裡只換配色
+patch:
+  style/color_scheme: catppuccin_mocha
+  style/color_scheme_dark: catppuccin_mocha
+
+  # 以路徑形式寫入，與 squirrel.yaml 內建的二十多套配色合併而非取代
+  preset_color_schemes/catppuccin_mocha:
+    name: Catppuccin Mocha
+    back_color: 0x1B1111                 # 候選條背景 Crust
+    border_color: 0x251818               # 邊框 Mantle
+    text_color: 0xDEC2BA                 # 拼音行文字 Subtext1
+    label_color: 0xC8ADA6                # 候選編號 Subtext0
+    candidate_text_color: 0xF4D6CD       # 候選文字 Text
+    hilited_back_color: 0xF7A6CB         # 首選背景 Mauve
+    hilited_candidate_text_color: 0x2E1E1E   # 首選文字 Base
+    hilited_candidate_label_color: 0x443231  # 首選編號 Surface0
+    hilited_text_color: 0x705B58         # 高亮拼音 Surface2
+    hilited_comment_text_color: 0x443231 # 高亮註解 Surface0
+    comment_text_color: 0x705B58         # 註解文字 Surface2
+
+  preset_color_schemes/catppuccin_macchiato:
+    name: Catppuccin Macchiato
+    back_color: 0x261918
+    border_color: 0x30201E
+    text_color: 0xE0C0B8
+    label_color: 0xCBADA5
+    candidate_text_color: 0xF5D3CA
+    hilited_back_color: 0xF6A0C6
+    hilited_candidate_text_color: 0x3A2724
+    hilited_candidate_label_color: 0x4F3A36
+    hilited_text_color: 0x70B558
+    hilited_comment_text_color: 0x4F3A36
+    comment_text_color: 0x70B558
+
+  preset_color_schemes/catppuccin_frappe:
+    name: Catppuccin Frappe
+    back_color: 0x342623
+    border_color: 0x3C2C29
+    text_color: 0xE2BFB5
+    label_color: 0xCEADA5
+    candidate_text_color: 0xF5D0C6
+    hilited_back_color: 0xE69ECA
+    hilited_candidate_text_color: 0x463430
+    hilited_candidate_label_color: 0x594541
+    hilited_text_color: 0x806862
+    hilited_comment_text_color: 0x594541
+    comment_text_color: 0x806862
+
+  preset_color_schemes/catppuccin_latte:
+    name: Catppuccin Latte
+    back_color: 0xE8E0DC
+    border_color: 0xEFE9E6
+    text_color: 0x775F5C
+    label_color: 0x856F6C
+    candidate_text_color: 0x694F4C
+    hilited_back_color: 0xef3988
+    hilited_candidate_text_color: 0xF5F1EF
+    hilited_candidate_label_color: 0xDAD0CC
+    hilited_text_color: 0xBEB0AC
+    hilited_comment_text_color: 0xDAD0CC
+    comment_text_color: 0xBEB0AC
