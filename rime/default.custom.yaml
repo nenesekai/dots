@@ -14,3 +14,8 @@ patch:
     Control_L: noop
     Control_R: noop
     Eisu_toggle: noop
+  # 簡繁切換改為單擊 Shift（見 lua/shift_trad_toggle.lua），釋放被其他程式佔用的 Ctrl+Shift+4。
+  # patch 無法刪除列表項，所以把原本的兩條簡繁綁定（第 8、9 項）覆寫成已存在的無害綁定。
+  # 注意：索引對應上面的基底版本，更新 rime-ice 後若 key_binder/bindings 順序有變需重新核對。
+  key_binder/bindings/@8: { when: composing, accept: Tab, send: Shift+Right }
+  key_binder/bindings/@9: { when: composing, accept: Tab, send: Shift+Right }

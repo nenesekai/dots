@@ -1,0 +1,3 @@
+# 霧凇全拼方案自訂：覆蓋 rime-ice 的 rime_ice.schema.yaml
+patch:
+  engine/processors/@before 0: lua_processor@*shift_trad_toggle   # 單擊 Shift 切換簡繁
